@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="praktos.dayInterface"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:praktos"
+             mc:Ignorable="d" Height="110" Width="80">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label x:Name="day_count" Grid.Row="1" Grid.Column="0" Content="0" HorizontalContentAlignment="Center" FontSize="16"/>
+        <Image x:Name="image" Grid.Row="0" Source="/krest.png" Margin="10" OverridesDefaultStyle="True"/>
+        <Button x:Name="open_dayInfo" Grid.Column="0" Grid.Row="2" Margin="5" Content="Открыть" Click="open_dayInfo_Click"/>
+    </Grid>
+</UserControl>
